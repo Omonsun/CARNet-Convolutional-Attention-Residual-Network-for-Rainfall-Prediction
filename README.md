@@ -1,3 +1,4 @@
+
 # CARNet: Convolutional Attention Residual Network for Rainfall Prediction
 
 [![Paper](https://img.shields.io/badge/Paper-IEEE-00629B)](https://doi.org/10.1109/ICCIT68739.2025.11490463)
@@ -16,7 +17,7 @@ CARNet combines one-dimensional convolution, multi-head self-attention, and resi
 > 2025 28th International Conference on Computer and Information Technology (ICCIT)
 
 **DOI:** [https://doi.org/10.1109/ICCIT68739.2025.11490463](https://doi.org/10.1109/ICCIT68739.2025.11490463)
-
+**CARTnet structure:** <img width="3840" height="1421" alt="attention seq plot AUTODESK" src="https://github.com/user-attachments/assets/69e783d4-b9db-4c89-b172-3d0bf2e07554" />
 ## Abstract
 
 Accurate rainfall prediction is important for water-resource management, agricultural planning, flood preparedness, and climate-risk assessment.

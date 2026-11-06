@@ -104,20 +104,20 @@ Dense output
 
 ## Attention Formulation
 
-For query matrix \(Q\), key matrix \(K\), value matrix \(V\), and key dimension \(d_k\), scaled dot-product attention can be expressed as:
+For query matrix $Q$, key matrix $K$, value matrix $V$, and key dimension $d_k$, scaled dot-product attention can be expressed as:
 
-$$
+$
 \mathrm{Attention}(Q,K,V)
 =
 \mathrm{softmax}
 \left(
 \frac{QK^{T}}{\sqrt{d_k}}
 \right)V
-$$
+$
 
 Multi-head attention applies attention in multiple learned representation subspaces:
 
-$$
+$
 \mathrm{MultiHead}(Q,K,V)
 =
 \mathrm{Concat}
@@ -126,11 +126,11 @@ $$
 \ldots,
 \mathrm{head}_h
 \right)W^O
-$$
+$
 
 where each attention head is defined as:
 
-$$
+$
 \mathrm{head}_i
 =
 \mathrm{Attention}
@@ -139,11 +139,11 @@ QW_i^Q,
 KW_i^K,
 VW_i^V
 \right)
-$$
+$
 
 A residual attention block can be represented conceptually as:
 
-$$
+$
 X_{l+1}
 =
 X_l+
@@ -151,7 +151,7 @@ X_l+
 \left(
 \mathrm{MultiHead}(X_l,X_l,X_l)
 \right)
-$$
+$
 
 The residual connection preserves the block input while allowing the attention mechanism to learn an additional feature refinement.
 
